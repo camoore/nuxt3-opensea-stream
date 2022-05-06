@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^5.0.4",
+    "nuxt": "3.0.0-rc.1"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.0.2",
+    "@opensea/stream-js": "^0.0.14",
+    "autoprefixer": "^10.4.7",
+    "dotenv": "^16.0.0",
+    "primeicons": "^5.0.0",
+    "ws": "^8.6.0"
+  }
+}
