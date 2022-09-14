@@ -29,9 +29,9 @@ const client = new OpenSeaStreamClient({
 const createNewEvent = (slug) => {
   events.value.push({
     slug,
-    event: client.onEvents(slug, [EventType.ITEM_LISTED, EventType.ITEM_SOLD], (item) => {
+    event: client.onEvents(slug, [EventType.ITEM_LISTED], (item) => {
     try {
-      console.log(item)
+      console.dir(item, { depth: null });
       if (item.event_type == "item_listed") {
         listings.value.unshift(item);
       } else if (item.event_type == "item_sold") {
@@ -51,8 +51,10 @@ const removeEvent = (slug) => {
   found.event();
 }
 
-createNewEvent("azuki");
-createNewEvent("kiwami-genesis");
-createNewEvent("ragnarok-meta");
+
+createNewEvent("mutant-ape-yacht-club");
+createNewEvent("boredapeyachtclub");
+createNewEvent("otherdeed");
+createNewEvent("doodles-official");
 
 </script>
