@@ -1,3 +1,20 @@
+# OpenSea Nuxt Live Stream using the Steam API
+
+[Learn More about the OS stream API here](https://docs.opensea.io/reference/stream-api-overview)
+
+
+# OpenSea API Key Required
+
+[Get an API key here](https://docs.opensea.io/reference/request-an-api-key)
+
+Create a .env file with your Key
+
+
+```
+OPENSEA_API_KEY=XXXXXXXXXXX
+```
+
+
 # Nuxt 3 Minimal Starter
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
@@ -7,14 +24,7 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 Make sure to install the dependencies:
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -22,21 +32,5 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
